@@ -1,0 +1,15 @@
+#nav{
+    /*width: 40vw;*/
+}
+
+@media  (max-width: 450px) {
+    .section-heading .section-heading-lower{
+        font-size: 1.5rem;
+    }
+    .p-5{
+        padding: 2rem !important;
+    }
+    p{
+        font-size: 0.85em;
+    }
+}
