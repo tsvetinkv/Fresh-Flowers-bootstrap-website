@@ -15,27 +15,56 @@
     <link href="css/styles.css" rel="stylesheet"/>
     <style>
 
-        .carousel-item img{
+        .carousel-item img {
             height: 90vh;
         }
-       .container{
+
+        .container {
             width: 70vw;
         }
-       .carousel-caption{
-           background: #000e35a3;
-           padding: 1em 2em;
-           border-radius: 20px;
-       }
-       .visible{
-           display: block;
-           background-color: rgb(255 212 203 / 80%);
-           padding: 1em;
-       }
-       @media (min-width: 768px) {
-           .small-screen-info{
-               display: none;
-           }
-       }
+
+        .carousel-caption {
+            background: #000e35a3;
+            padding: 1em 2em;
+            border-radius: 20px;
+        }
+
+        .visible {
+            display: block;
+            background-color: rgb(255 212 203 / 80%);
+            padding: 1em;
+        }
+
+        .line{
+            margin-top: 5em;
+            display: flex;
+            justify-content: space-around;
+        }
+        @media (max-width: 1080px) {
+            .line{
+                margin: 3em;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .line object{
+                width: 95vw;
+                margin-bottom: 2em;
+            }
+        }
+        @media (min-width: 735px) and (max-width: 1080px){
+            .line object{
+                width: 80%;
+                margin-bottom: 2em;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .small-screen-info {
+                display: none;
+            }
+
+        }
 
     </style>
 </head>
@@ -55,9 +84,12 @@
                 class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto row" id="nav">
-                    <li class="nav-item col-xs-12 col-lg-3"><a class="nav-link text-uppercase" href="index.html">Начало</a></li>
-                    <li class="nav-item col-xs-12 col-4"><a class="nav-link text-uppercase" href="products.html">Продукти</a></li>
-                    <li class="nav-item col-xs-12 col-5"><a class="nav-link text-uppercase" href="store.html">За магазина</a></li>
+                <li class="nav-item col-xs-12 col-lg-3"><a class="nav-link text-uppercase" href="index.html">Начало</a>
+                </li>
+                <li class="nav-item col-xs-12 col-4"><a class="nav-link text-uppercase"
+                                                        href="products.html">Продукти</a></li>
+                <li class="nav-item col-xs-12 col-5"><a class="nav-link text-uppercase" href="store.html">За
+                    магазина</a></li>
             </ul>
         </div>
     </div>
@@ -144,6 +176,22 @@
         </div>
     </div>
 </div>
+<div class="line">
+    <object width="550"
+            height="350"
+            data= "./assets/flikyVideo.mp4"
+            type="video/mp4">
+
+    </object>
+    <object width="550"
+            height="350"
+            data= "./assets/textToSpeechWithSubtitlesVideo.mp4"
+            type="video/mp4">
+
+    </object>
+</div>
+
+
 <section class="page-section cta">
     <div class="container-sm">
         <div class="row">
